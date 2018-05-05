@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/Radovan/Documents/KiCad/Triac/Triac.sch</source>
+    <date>7. 7. 2016 11:01:42</date>
+    <tool>Eeschema 4.0.1-stable</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Triac.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>BTA16/800BRG</value>
+      <footprint>TO_SOT_Packages_THT:TO-220_Neutral123_Vertical</footprint>
+      <libsource lib="device" part="TRIAC"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57782A2C</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MOC3041M</value>
+      <footprint>Housings_DIP:DIP-6_W7.62mm</footprint>
+      <libsource lib="opto" part="MOC3041M"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>57782A77</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>100R</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM10mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B77B2</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED-3MM</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B781D</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>Control</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x02</footprint>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B79D4</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>360R</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM10mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B7F36</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>330R</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM10mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B801C</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>47R</value>
+      <footprint>Resistors_ThroughHole:Resistor_Horizontal_RM15mm</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B8219</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>15n/400V</value>
+      <footprint>Capacitors_ThroughHole:C_Rect_L7.5_W6.5_P5</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B8284</tstamp>
+    </comp>
+    <comp ref="P2">
+      <value>IN AC230V</value>
+      <footprint>Connect:bornier2</footprint>
+      <libsource lib="borniers" part="CONN_2_V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577B9BBA</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>OUT AC230V/16A</value>
+      <footprint>Connect:bornier2</footprint>
+      <libsource lib="borniers" part="CONN_2_V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577D6880</tstamp>
+    </comp>
+    <comp ref="HS1">
+      <value>HEATSINK</value>
+      <footprint>Heatsinks:Heatsink_Fischer_SK129-STS_42x25mm_2xDrill2.5mm</footprint>
+      <libsource lib="device" part="HEATSINK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>577D6AE9</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C?</fp>
+        <fp>C_????_*</fp>
+        <fp>C_????</fp>
+        <fp>SMD*_c</fp>
+        <fp>Capacitor*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector 01x02</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X02</fp>
+        <fp>Pin_Header_Angled_1X02</fp>
+        <fp>Socket_Strip_Straight_1X02</fp>
+        <fp>Socket_Strip_Angled_1X02</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="borniers" part="CONN_2_V">
+      <description>Symbole general de connecteur</description>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_2_V</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="HEATSINK">
+      <fields>
+        <field name="Reference">HS</field>
+        <field name="Value">HEATSINK</field>
+      </fields>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="opto" part="MOC3031M">
+      <aliases>
+        <alias>MOC3032M</alias>
+        <alias>MOC3033M</alias>
+        <alias>MOC3041M</alias>
+        <alias>MOC3042M</alias>
+        <alias>MOC3043M</alias>
+      </aliases>
+      <description>DIP6,  Zero Cross Opto-Triac, Vdrm 250V, Ift 15mA</description>
+      <docs>http://www.fairchildsemi.com/ds/MO/MOC3031M.pdf</docs>
+      <footprints>
+        <fp>DIP-6*</fp>
+        <fp>SMD-6*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MOC3031M</field>
+        <field name="Footprint">DIP-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="TRIAC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TRIAC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>C:\Program Files\KiCad\share\kicad\library\device.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>C:\Program Files\KiCad\share\kicad\library\conn.lib</uri>
+    </library>
+    <library logical="opto">
+      <uri>C:\Program Files\KiCad\share\kicad\library\opto.lib</uri>
+    </library>
+    <library logical="borniers">
+      <uri>C:\Users\Radovan\KiCad\library\borniers.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(C1-Pad2)">
+      <node ref="P3" pin="1"/>
+      <node ref="U2" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="2" name="Net-(C1-Pad1)">
+      <node ref="R4" pin="2"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="3" name="/Data">
+      <node ref="R1" pin="2"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="4" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="5" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="6" name="/GND">
+      <node ref="P1" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="7" name="/NULL">
+      <node ref="P3" pin="2"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="8" name="/L">
+      <node ref="U2" pin="2"/>
+      <node ref="P2" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="9" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="10" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+  </nets>
+</export>

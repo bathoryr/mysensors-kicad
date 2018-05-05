@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name footprints)(type Legacy)(uri C:\Users\Radovan\Downloads\KiCAD\phototr\kicad-libs-master\footprints.mod)(options "")(descr ""))
+)

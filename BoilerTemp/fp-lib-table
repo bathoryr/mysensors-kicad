@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name DIP4-6)(type KiCad)(uri /home/radovan/kicad/projects/TriacDimmer/DIP4-6.pretty)(options "")(descr ""))
+  (lib (name relays)(type KiCad)(uri /home/radovan/kicad/libraries/mylibs/relays.pretty)(options "")(descr ""))
+)
