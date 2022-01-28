@@ -1,39 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:nRF24L01+
-LIBS:nrf24l01p_smd
-LIBS:arduino
-LIBS:ds18xx
+EESchema Schematic File Version 4
 LIBS:LEDLight-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -48,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L nRF24L01+ U2
+L LEDLight-rescue:nRF24L01+ U2
 U 1 1 5745BE0F
 P 8500 2400
 F 0 "U2" H 8500 2100 50  0000 C CNN
@@ -59,7 +26,7 @@ F 3 "DOCUMENTATION" H 8500 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L arduino_mini U1
+L LEDLight-rescue:arduino_mini U1
 U 1 1 5745C3A7
 P 6100 3000
 F 0 "U1" H 6100 2050 70  0000 C CNN
@@ -70,7 +37,7 @@ F 3 "" H 6100 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L LEDLight-rescue:GND #PWR01
 U 1 1 5745C95A
 P 5150 2050
 F 0 "#PWR01" H 5150 1800 50  0001 C CNN
@@ -81,7 +48,7 @@ F 3 "" H 5150 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG02
+L LEDLight-rescue:PWR_FLAG #FLG02
 U 1 1 5745C9AB
 P 4500 1600
 F 0 "#FLG02" H 4500 1695 50  0001 C CNN
@@ -92,7 +59,7 @@ F 3 "" H 4500 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG03
+L LEDLight-rescue:PWR_FLAG #FLG03
 U 1 1 5745C9C3
 P 5150 1600
 F 0 "#FLG03" H 5150 1695 50  0001 C CNN
@@ -103,7 +70,7 @@ F 3 "" H 5150 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR04
+L LEDLight-rescue:VCC #PWR04
 U 1 1 5745CB15
 P 4500 2050
 F 0 "#PWR04" H 4500 1900 50  0001 C CNN
@@ -155,7 +122,7 @@ MOSI
 Text Label 6800 2550 0    60   ~ 0
 MOSI
 $Comp
-L GND #PWR05
+L LEDLight-rescue:GND #PWR05
 U 1 1 5745D77E
 P 7250 2450
 F 0 "#PWR05" H 7250 2200 50  0001 C CNN
@@ -166,7 +133,7 @@ F 3 "" H 7250 2450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L LEDLight-rescue:GND #PWR06
 U 1 1 5745D810
 P 6100 4700
 F 0 "#PWR06" H 6100 4450 50  0001 C CNN
@@ -201,7 +168,7 @@ NoConn ~ 5400 2900
 NoConn ~ 5400 2800
 NoConn ~ 5400 2600
 $Comp
-L IRF540N Q1
+L LEDLight-rescue:IRF540N-RESCUE-LEDLight Q1
 U 1 1 5745DBB2
 P 8650 4350
 F 0 "Q1" H 8900 4425 50  0000 L CNN
@@ -216,7 +183,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 3300 7650 4400
 $Comp
-L GND #PWR07
+L LEDLight-rescue:GND #PWR07
 U 1 1 5745DCE0
 P 8750 4750
 F 0 "#PWR07" H 8750 4500 50  0001 C CNN
@@ -229,7 +196,7 @@ $EndComp
 Wire Wire Line
 	8750 4550 8750 4750
 $Comp
-L CONN_01X02 P1
+L LEDLight-rescue:CONN_01X02 P1
 U 1 1 5745DD52
 P 8950 4050
 F 0 "P1" H 8950 4200 50  0000 C CNN
@@ -240,7 +207,7 @@ F 3 "" H 8950 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR08
+L LEDLight-rescue:VCC #PWR08
 U 1 1 5745DD9B
 P 8750 3900
 F 0 "#PWR08" H 8750 3750 50  0001 C CNN
@@ -255,7 +222,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 4100 8750 4150
 $Comp
-L CONN_01X03 P2
+L LEDLight-rescue:CONN_01X03 P2
 U 1 1 5745DFB2
 P 9850 3100
 F 0 "P2" H 9850 3300 50  0000 C CNN
@@ -272,7 +239,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 3200 9400 3200
 $Comp
-L GND #PWR09
+L LEDLight-rescue:GND #PWR09
 U 1 1 5745E074
 P 9400 3300
 F 0 "#PWR09" H 9400 3050 50  0001 C CNN
@@ -297,7 +264,7 @@ Wire Wire Line
 Text Label 6800 3400 0    60   ~ 0
 PIRD
 $Comp
-L CONN_01X04 P3
+L LEDLight-rescue:CONN_01X04 P3
 U 1 1 5745EBF6
 P 9850 3800
 F 0 "P3" H 9850 4050 50  0000 C CNN
@@ -308,16 +275,16 @@ F 3 "" H 9850 3800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9150 3650 9650 3650
+	9150 3650 9250 3650
 Wire Wire Line
-	9450 3750 9650 3750
+	9450 3750 9600 3750
 Wire Wire Line
 	9650 3850 9600 3850
 Wire Wire Line
 	9600 3850 9600 3750
 Connection ~ 9600 3750
 $Comp
-L GND #PWR010
+L LEDLight-rescue:GND #PWR010
 U 1 1 5745ED28
 P 9450 4050
 F 0 "#PWR010" H 9450 3800 50  0001 C CNN
@@ -328,7 +295,7 @@ F 3 "" H 9450 4050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9250 3950 9650 3950
+	9250 3950 9450 3950
 Wire Wire Line
 	9450 3950 9450 4050
 Text Label 9500 3650 0    60   ~ 0
@@ -340,7 +307,7 @@ Wire Wire Line
 Text Label 6800 3600 0    60   ~ 0
 RFd
 $Comp
-L CONN_01X04 P4
+L LEDLight-rescue:CONN_01X04 P4
 U 1 1 57460156
 P 9850 4550
 F 0 "P4" H 9850 4800 50  0000 C CNN
@@ -357,7 +324,7 @@ Wire Wire Line
 Wire Wire Line
 	9650 4600 9450 4600
 $Comp
-L GND #PWR011
+L LEDLight-rescue:GND #PWR011
 U 1 1 57460243
 P 9450 4750
 F 0 "#PWR011" H 9450 4500 50  0001 C CNN
@@ -386,7 +353,7 @@ SDA
 Text Label 5250 3300 0    60   ~ 0
 SCL
 $Comp
-L R R2
+L LEDLight-rescue:R R2
 U 1 1 5746104A
 P 7250 3500
 F 0 "R2" V 7330 3500 50  0000 C CNN
@@ -399,7 +366,7 @@ $EndComp
 Wire Wire Line
 	6800 3500 7100 3500
 $Comp
-L LED D1
+L LEDLight-rescue:LED-RESCUE-LEDLight D1
 U 1 1 574610FB
 P 7450 3750
 F 0 "D1" H 7450 3850 50  0000 C CNN
@@ -410,7 +377,7 @@ F 3 "" H 7450 3750 50  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR012
+L LEDLight-rescue:GND #PWR012
 U 1 1 57461152
 P 7450 4200
 F 0 "#PWR012" H 7450 3950 50  0001 C CNN
@@ -427,7 +394,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 3950 7450 4200
 $Comp
-L R R1
+L LEDLight-rescue:R R1
 U 1 1 57461213
 P 7150 2950
 F 0 "R1" V 7230 2950 50  0000 C CNN
@@ -438,7 +405,7 @@ F 3 "" H 7150 2950 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D2
+L LEDLight-rescue:LED-RESCUE-LEDLight D2
 U 1 1 57461262
 P 7600 2950
 F 0 "D2" H 7600 3050 50  0000 C CNN
@@ -449,7 +416,7 @@ F 3 "" H 7600 2950 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR013
+L LEDLight-rescue:GND #PWR013
 U 1 1 574612A3
 P 7800 3000
 F 0 "#PWR013" H 7800 2750 50  0001 C CNN
@@ -462,7 +429,7 @@ $EndComp
 Wire Wire Line
 	7300 2950 7400 2950
 $Comp
-L CP_Small C1
+L LEDLight-rescue:CP_Small C1
 U 1 1 57463108
 P 7500 2250
 F 0 "C1" H 7510 2320 50  0000 L CNN
@@ -477,7 +444,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 2200 7650 2150
 Wire Wire Line
-	7650 2150 7250 2150
+	7650 2150 7500 2150
 Wire Wire Line
 	7250 2150 7250 2450
 Connection ~ 7500 2150
@@ -489,7 +456,7 @@ Wire Wire Line
 Wire Wire Line
 	9250 1900 9250 2200
 $Comp
-L CONN_01X02 P5
+L LEDLight-rescue:CONN_01X02 P5
 U 1 1 574698A3
 P 4550 2650
 F 0 "P5" H 4550 2800 50  0000 C CNN
@@ -500,7 +467,7 @@ F 3 "" H 4550 2650 50  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L LEDLight-rescue:GND #PWR014
 U 1 1 57469900
 P 4800 2850
 F 0 "#PWR014" H 4800 2600 50  0001 C CNN
@@ -521,7 +488,7 @@ Wire Wire Line
 Wire Wire Line
 	6800 2950 7000 2950
 $Comp
-L IRF540N Q2
+L LEDLight-rescue:IRF540N-RESCUE-LEDLight Q2
 U 1 1 57484ED4
 P 8250 3500
 F 0 "Q2" H 8500 3575 50  0000 L CNN
@@ -542,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 3250 8050 3550
 $Comp
-L CONN_01X02 P6
+L LEDLight-rescue:CONN_01X02 P6
 U 1 1 57485237
 P 8950 3200
 F 0 "P6" H 8950 3350 50  0000 C CNN
@@ -553,7 +520,7 @@ F 3 "" H 8950 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR015
+L LEDLight-rescue:VCC #PWR015
 U 1 1 574852AA
 P 8750 3000
 F 0 "#PWR015" H 8750 2850 50  0001 C CNN
@@ -570,7 +537,7 @@ Wire Wire Line
 Wire Wire Line
 	8750 3300 8750 3250
 $Comp
-L GND #PWR016
+L LEDLight-rescue:GND #PWR016
 U 1 1 57485381
 P 8350 3850
 F 0 "#PWR016" H 8350 3600 50  0001 C CNN
@@ -583,7 +550,7 @@ $EndComp
 Wire Wire Line
 	8350 3700 8350 3850
 $Comp
-L CP_Small C2
+L LEDLight-rescue:CP_Small C2
 U 1 1 5749FBF4
 P 9250 3850
 F 0 "C2" H 9260 3920 50  0000 L CNN
@@ -598,7 +565,7 @@ Wire Wire Line
 Connection ~ 9250 3650
 Connection ~ 9450 3950
 $Comp
-L DS18B20 U3
+L LEDLight-rescue:DS18B20 U3
 U 1 1 574A8FCD
 P 7700 5050
 F 0 "U3" H 7550 5300 50  0000 C CNN
@@ -609,7 +576,7 @@ F 3 "" H 7550 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L LEDLight-rescue:GND #PWR017
 U 1 1 574A9012
 P 7300 5350
 F 0 "#PWR017" H 7300 5100 50  0001 C CNN
@@ -626,17 +593,17 @@ Wire Wire Line
 Wire Wire Line
 	7300 4950 7400 4950
 Wire Wire Line
-	7300 4600 7300 4950
+	7300 4600 7300 4750
 Text Label 7300 4700 0    60   ~ 0
 3V3
 Wire Wire Line
-	6800 5050 7400 5050
+	6800 5050 7100 5050
 Wire Wire Line
 	6800 2850 7000 2850
 Text Label 6800 2850 0    60   ~ 0
 TEMP
 $Comp
-L R_Small R3
+L LEDLight-rescue:R_Small R3
 U 1 1 574A928B
 P 7100 4850
 F 0 "R3" H 7130 4870 50  0000 L CNN
@@ -656,4 +623,16 @@ Text Label 9250 2200 0    60   ~ 0
 SCK
 Text Label 6850 5050 0    60   ~ 0
 TEMP
+Wire Wire Line
+	9600 3750 9650 3750
+Wire Wire Line
+	7500 2150 7250 2150
+Wire Wire Line
+	9250 3650 9650 3650
+Wire Wire Line
+	9450 3950 9650 3950
+Wire Wire Line
+	7300 4750 7300 4950
+Wire Wire Line
+	7100 5050 7400 5050
 $EndSCHEMATC

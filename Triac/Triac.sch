@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Triac-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -28,9 +29,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:borniers
-LIBS:mounting-hole
-LIBS:hlk-pm01
 LIBS:Triac-cache
 EELAYER 25 0
 EELAYER END
@@ -80,7 +78,7 @@ F 3 "" H 4550 1450 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LED D1
+L LED-RESCUE-Triac D1
 U 1 1 577B781D
 P 4300 1950
 F 0 "D1" H 4300 2050 50  0000 C CNN

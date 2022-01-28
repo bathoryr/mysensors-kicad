@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# LightSwitch-rescue_+3.3V
+# +3.3V
 #
-DEF LightSwitch-rescue_+3.3V #PWR 0 0 Y Y 1 F P
+DEF +3.3V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "LightSwitch-rescue_+3.3V" 0 140 50 H V C CNN
+F1 "+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_ATMEGA328P-PU
+# ATMEGA328P-PU
 #
-DEF LightSwitch-rescue_ATMEGA328P-PU U 0 40 Y Y 1 F N
+DEF ATMEGA328P-PU U 0 40 Y Y 1 F N
 F0 "U" -750 1250 50 H V L BNN
-F1 "LightSwitch-rescue_ATMEGA328P-PU" 400 -1400 50 H V L BNN
+F1 "ATMEGA328P-PU" 400 -1400 50 H V L BNN
 F2 "DIL28" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -60,11 +60,11 @@ X (PCINT6/XTAL1/TOSC1)PB6 9 1000 500 150 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_CP_Small
+# CP_Small
 #
-DEF LightSwitch-rescue_CP_Small C 0 10 N N 1 F N
+DEF CP_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "LightSwitch-rescue_CP_Small" 10 -80 50 H V L CNN
+F1 "CP_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -80,11 +80,11 @@ X ~ 2 0 -100 73 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_C_Small
+# C_Small
 #
-DEF LightSwitch-rescue_C_Small C 0 10 N N 1 F N
+DEF C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "LightSwitch-rescue_C_Small" 10 -80 50 H V L CNN
+F1 "C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -98,11 +98,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_Conn_01x02
+# Conn_01x02
 #
-DEF LightSwitch-rescue_Conn_01x02 J 0 40 Y N 1 F N
+DEF Conn_01x02 J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "LightSwitch-rescue_Conn_01x02" 0 -200 50 H V C CNN
+F1 "Conn_01x02" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -122,11 +122,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_Conn_01x03
+# Conn_01x03
 #
-DEF LightSwitch-rescue_Conn_01x03 J 0 40 Y N 1 F N
+DEF Conn_01x03 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "LightSwitch-rescue_Conn_01x03" 0 -200 50 H V C CNN
+F1 "Conn_01x03" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -148,11 +148,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_Fuse_Small
+# Fuse_Small
 #
-DEF LightSwitch-rescue_Fuse_Small F 0 10 N N 1 F N
+DEF Fuse_Small F 0 10 N N 1 F N
 F0 "F" 0 -60 50 H V C CNN
-F1 "LightSwitch-rescue_Fuse_Small" 0 60 50 H V C CNN
+F1 "Fuse_Small" 0 60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -166,11 +166,11 @@ X ~ 2 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_GND
+# GND
 #
-DEF LightSwitch-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "LightSwitch-rescue_GND" 0 -150 50 H V C CNN
+F1 "GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -179,11 +179,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_HLK-PM01
+# HLK-PM01
 #
-DEF LightSwitch-rescue_HLK-PM01 AC/DC 0 40 Y Y 1 F N
+DEF HLK-PM01 AC/DC 0 40 Y Y 1 F N
 F0 "AC/DC" 0 100 60 H V C CNN
-F1 "LightSwitch-rescue_HLK-PM01" 0 -50 60 H V C CNN
+F1 "HLK-PM01" 0 -50 60 H V C CNN
 F2 "" 0 50 60 H V C CNN
 F3 "" 0 50 60 H V C CNN
 DRAW
@@ -195,11 +195,11 @@ X -Vo 4 -400 -200 200 R 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_NRF24L01
+# NRF24L01
 #
-DEF LightSwitch-rescue_NRF24L01 U 0 40 Y Y 1 F N
+DEF NRF24L01 U 0 40 Y Y 1 F N
 F0 "U" 100 250 60 H V C CNN
-F1 "LightSwitch-rescue_NRF24L01" 250 -250 60 H V C CNN
+F1 "NRF24L01" 250 -250 60 H V C CNN
 F2 "" 0 -150 60 H V C CNN
 F3 "" 0 -150 60 H V C CNN
 DRAW
@@ -215,11 +215,11 @@ X IRQ 8 400 0 150 L 40 40 1 1 O
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_PWR_FLAG
+# PWR_FLAG
 #
-DEF LightSwitch-rescue_PWR_FLAG #FLG 0 0 N N 1 F P
+DEF PWR_FLAG #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "LightSwitch-rescue_PWR_FLAG" 0 150 50 H V C CNN
+F1 "PWR_FLAG" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -228,11 +228,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_R_Small
+# R_Small
 #
-DEF LightSwitch-rescue_R_Small R 0 10 N N 1 F N
+DEF R_Small R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "LightSwitch-rescue_R_Small" 30 -40 50 H V L CNN
+F1 "R_Small" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -245,11 +245,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# LightSwitch-rescue_S102S01
+# S102S01
 #
-DEF LightSwitch-rescue_S102S01 U 0 40 Y Y 1 F N
+DEF S102S01 U 0 40 Y Y 1 F N
 F0 "U" -200 200 50 H V L CNN
-F1 "LightSwitch-rescue_S102S01" 0 200 50 H V L CNN
+F1 "S102S01" 0 200 50 H V L CNN
 F2 "Housings_SIP:SIP4_Sharp-SSR_Pitch7.62mm_Straight" -200 -200 50 H I L CIN
 F3 "" -35 0 50 H I L CNN
 $FPLIST

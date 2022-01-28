@@ -1,4 +1,4 @@
-update=5/5/2018 2:09:05 PM
+update=5/5/2018 2:00:28 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -29,7 +29,7 @@ version=1
 version=1
 LibDir=C:/Users/Radovan/KiCad/library
 [eeschema/libraries]
-LibName1=Triac-rescue
+LibName1=LEDLight-rescue
 LibName2=power
 LibName3=device
 LibName4=transistors
@@ -59,6 +59,7 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=C:/Users/Radovan/KiCad/library/borniers
-LibName32=mounting-hole
-LibName33=C:/Users/Radovan/Documents/KiCad/TriacDimmer/hlk-pm01
+LibName31=nRF24L01+
+LibName32=nrf24l01p_smd
+LibName33=arduino
+LibName34=ds18xx

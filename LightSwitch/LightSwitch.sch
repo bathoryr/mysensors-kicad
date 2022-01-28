@@ -1,41 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:mysensors_radios
-LIBS:BoilerTemp-cache
-LIBS:rb-custom
+EESchema Schematic File Version 4
 LIBS:LightSwitch-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -50,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA328P-PU U1
+L LightSwitch-rescue:ATMEGA328P-PU U1
 U 1 1 5A7F0678
 P 5200 2600
 F 0 "U1" H 4450 3850 50  0000 L BNN
@@ -61,7 +26,7 @@ F 3 "" H 5200 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG01
+L LightSwitch-rescue:PWR_FLAG #FLG01
 U 1 1 5A7F071A
 P 2750 1200
 F 0 "#FLG01" H 2750 1275 50  0001 C CNN
@@ -72,7 +37,7 @@ F 3 "" H 2750 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG02
+L LightSwitch-rescue:PWR_FLAG #FLG02
 U 1 1 5A7F0731
 P 2250 1200
 F 0 "#FLG02" H 2250 1275 50  0001 C CNN
@@ -83,19 +48,19 @@ F 3 "" H 2250 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 3800 4300 3800
+	3350 3800 4100 3800
 Wire Wire Line
 	4300 3700 4100 3700
 Wire Wire Line
-	4100 3700 4100 3950
+	4100 3700 4100 3800
 Connection ~ 4100 3800
 Wire Wire Line
-	4100 1500 4300 1500
+	4100 1500 4250 1500
 Wire Wire Line
-	4100 1350 4100 1900
+	4100 1350 4100 1500
 Connection ~ 4100 1800
 $Comp
-L C_Small C2
+L LightSwitch-rescue:C_Small C2
 U 1 1 5A7F07B4
 P 4100 2000
 F 0 "C2" H 4110 2070 50  0000 L CNN
@@ -106,7 +71,7 @@ F 3 "" H 4100 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C3
+L LightSwitch-rescue:C_Small C3
 U 1 1 5A7F083D
 P 4250 1600
 F 0 "C3" H 4260 1670 50  0000 L CNN
@@ -118,7 +83,7 @@ F 3 "" H 4250 1600 50  0001 C CNN
 $EndComp
 Connection ~ 4250 1500
 $Comp
-L GND #PWR03
+L LightSwitch-rescue:GND #PWR03
 U 1 1 5A7F089D
 P 4100 2200
 F 0 "#PWR03" H 4100 1950 50  0001 C CNN
@@ -129,7 +94,7 @@ F 3 "" H 4100 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L LightSwitch-rescue:GND #PWR04
 U 1 1 5A7F08B8
 P 4250 1700
 F 0 "#PWR04" H 4250 1450 50  0001 C CNN
@@ -140,7 +105,7 @@ F 3 "" H 4250 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R1
+L LightSwitch-rescue:R_Small R1
 U 1 1 5A7F08CB
 P 6450 2950
 F 0 "R1" H 6480 2970 50  0000 L CNN
@@ -151,7 +116,7 @@ F 3 "" H 6450 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L NRF24L01 U2
+L LightSwitch-rescue:NRF24L01 U2
 U 1 1 5A7F0920
 P 7250 1800
 F 0 "U2" H 7350 2050 60  0000 C CNN
@@ -162,7 +127,7 @@ F 3 "" H 7250 1650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR05
+L LightSwitch-rescue:+3.3V #PWR05
 U 1 1 5A7F0A81
 P 4100 1350
 F 0 "#PWR05" H 4100 1200 50  0001 C CNN
@@ -185,7 +150,7 @@ Wire Wire Line
 Wire Wire Line
 	6850 2000 6850 1900
 $Comp
-L +3.3V #PWR06
+L LightSwitch-rescue:+3.3V #PWR06
 U 1 1 5A7F0B3C
 P 7250 1350
 F 0 "#PWR06" H 7250 1200 50  0001 C CNN
@@ -196,7 +161,7 @@ F 3 "" H 7250 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 1350 7250 1450
+	7250 1350 7250 1400
 Wire Wire Line
 	6200 1600 6450 1600
 Text Label 6350 1600 0    60   ~ 0
@@ -215,7 +180,7 @@ Text Label 7800 1900 0    60   ~ 0
 CE
 NoConn ~ 7650 1800
 $Comp
-L +3.3V #PWR07
+L LightSwitch-rescue:+3.3V #PWR07
 U 1 1 5A7F0F73
 P 6750 2850
 F 0 "#PWR07" H 6750 2700 50  0001 C CNN
@@ -232,7 +197,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 2950 6750 2850
 $Comp
-L CP_Small C4
+L LightSwitch-rescue:CP_Small C4
 U 1 1 5A7F1037
 P 8150 1800
 F 0 "C4" H 8160 1870 50  0000 L CNN
@@ -252,10 +217,10 @@ Wire Wire Line
 Wire Wire Line
 	8150 2200 7250 2200
 Wire Wire Line
-	7250 2150 7250 2400
+	7250 2150 7250 2200
 Connection ~ 7250 2200
 $Comp
-L C_Small C1
+L LightSwitch-rescue:C_Small C1
 U 1 1 5A7F13C5
 P 4900 5050
 F 0 "C1" H 4910 5120 50  0000 L CNN
@@ -277,10 +242,9 @@ NoConn ~ 6200 2550
 NoConn ~ 6200 2650
 NoConn ~ 6200 2750
 NoConn ~ 6200 2850
-NoConn ~ 6200 3700
 NoConn ~ 6200 3600
 $Comp
-L Conn_01x02 J1
+L LightSwitch-rescue:Conn_01x02 J1
 U 1 1 5A7F1B49
 P 7300 3200
 F 0 "J1" H 7300 3300 50  0000 C CNN
@@ -291,7 +255,7 @@ F 3 "" H 7300 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_01x02 J2
+L LightSwitch-rescue:Conn_01x02 J2
 U 1 1 5A7F1BC4
 P 7300 3500
 F 0 "J2" H 7300 3600 50  0000 C CNN
@@ -308,17 +272,11 @@ Wire Wire Line
 Wire Wire Line
 	6600 3200 7100 3200
 Wire Wire Line
-	6200 3400 6600 3400
-Wire Wire Line
-	6600 3400 6600 3500
-Wire Wire Line
-	6600 3500 7100 3500
-Wire Wire Line
 	7100 3300 6950 3300
 Wire Wire Line
-	6950 3300 6950 3850
+	6950 3300 6950 3600
 $Comp
-L GND #PWR08
+L LightSwitch-rescue:GND #PWR08
 U 1 1 5A7F1CC5
 P 6950 3850
 F 0 "#PWR08" H 6950 3600 50  0001 C CNN
@@ -332,7 +290,7 @@ Wire Wire Line
 	7100 3600 6950 3600
 Connection ~ 6950 3600
 $Comp
-L GND #PWR09
+L LightSwitch-rescue:GND #PWR09
 U 1 1 5A7F1DF1
 P 7250 2400
 F 0 "#PWR09" H 7250 2150 50  0001 C CNN
@@ -344,7 +302,7 @@ F 3 "" H 7250 2400 50  0001 C CNN
 $EndComp
 Connection ~ 4100 1500
 $Comp
-L GND #PWR010
+L LightSwitch-rescue:GND #PWR010
 U 1 1 5A7F184A
 P 4100 3950
 F 0 "#PWR010" H 4100 3700 50  0001 C CNN
@@ -355,7 +313,7 @@ F 3 "" H 4100 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L S102S01 U3
+L LightSwitch-rescue:S102S01 U3
 U 1 1 5A7F353A
 P 7350 4250
 F 0 "U3" H 7150 4450 50  0000 L CNN
@@ -366,7 +324,7 @@ F 3 "" H 7315 4250 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R_Small R2
+L LightSwitch-rescue:R_Small R2
 U 1 1 5A7F4013
 P 6750 4150
 F 0 "R2" H 6780 4170 50  0000 L CNN
@@ -384,9 +342,8 @@ Wire Wire Line
 	6500 4150 6650 4150
 Wire Wire Line
 	6850 4150 7050 4150
-NoConn ~ 6200 3500
 $Comp
-L GND #PWR011
+L LightSwitch-rescue:GND #PWR011
 U 1 1 5A7F4613
 P 6950 4450
 F 0 "#PWR011" H 6950 4200 50  0001 C CNN
@@ -401,7 +358,7 @@ Wire Wire Line
 Wire Wire Line
 	6950 4350 7050 4350
 $Comp
-L Conn_01x02 J4
+L LightSwitch-rescue:Conn_01x02 J4
 U 1 1 5A7F4B4D
 P 8250 4200
 F 0 "J4" H 8250 4300 50  0000 C CNN
@@ -416,7 +373,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 4350 7800 4350
 $Comp
-L HLK-PM01 AC/DC1
+L LightSwitch-rescue:HLK-PM01 AC/DC1
 U 1 1 5A7F62C5
 P 5400 5050
 F 0 "AC/DC1" H 5400 5150 60  0000 C CNN
@@ -427,7 +384,7 @@ F 3 "" H 5400 5100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Conn_01x02 J3
+L LightSwitch-rescue:Conn_01x02 J3
 U 1 1 5A7F6852
 P 6150 5000
 F 0 "J3" H 6150 5100 50  0000 C CNN
@@ -438,9 +395,9 @@ F 3 "" H 6150 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5650 4650 7800 4650
+	5650 4650 5850 4650
 $Comp
-L Fuse_Small F1
+L LightSwitch-rescue:Fuse_Small F1
 U 1 1 5A7F7596
 P 5850 5450
 F 0 "F1" H 5850 5390 50  0000 C CNN
@@ -453,7 +410,7 @@ $EndComp
 Wire Wire Line
 	5750 5450 5650 5450
 $Comp
-L CP_Small C5
+L LightSwitch-rescue:CP_Small C5
 U 1 1 5A7F7B2C
 P 3800 2000
 F 0 "C5" H 3810 2070 50  0000 L CNN
@@ -464,17 +421,17 @@ F 3 "" H 3800 2000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	4900 5150 4900 5650
+	4900 5150 4900 5450
 Connection ~ 4900 5450
 Wire Wire Line
-	4900 4500 4900 4950
+	4900 4500 4900 4650
 Connection ~ 4900 4650
 Wire Wire Line
-	3800 1800 4300 1800
+	3800 1800 4100 1800
 Wire Wire Line
 	4900 5450 5200 5450
 $Comp
-L +3.3V #PWR012
+L LightSwitch-rescue:+3.3V #PWR012
 U 1 1 5A7F7FB3
 P 4900 5650
 F 0 "#PWR012" H 4900 5500 50  0001 C CNN
@@ -492,7 +449,7 @@ Wire Wire Line
 	4100 2100 4100 2200
 Connection ~ 4100 2100
 $Comp
-L GND #PWR013
+L LightSwitch-rescue:GND #PWR013
 U 1 1 5A7F835D
 P 4900 4500
 F 0 "#PWR013" H 4900 4250 50  0001 C CNN
@@ -505,7 +462,7 @@ $EndComp
 Wire Wire Line
 	4900 4650 5200 4650
 $Comp
-L GND #PWR014
+L LightSwitch-rescue:GND #PWR014
 U 1 1 5A7F843F
 P 2250 1350
 F 0 "#PWR014" H 2250 1100 50  0001 C CNN
@@ -518,7 +475,7 @@ $EndComp
 Wire Wire Line
 	2250 1200 2250 1350
 $Comp
-L +3.3V #PWR015
+L LightSwitch-rescue:+3.3V #PWR015
 U 1 1 5A7F84F3
 P 3100 1350
 F 0 "#PWR015" H 3100 1200 50  0001 C CNN
@@ -548,4 +505,70 @@ Wire Wire Line
 Wire Wire Line
 	8050 5450 8050 4300
 Connection ~ 5950 5450
+$Comp
+L LightSwitch-rescue:Conn_01x03 J5
+U 1 1 5AFA77E1
+P 7800 2900
+F 0 "J5" H 7800 3100 50  0000 C CNN
+F 1 "PIR sensor" H 7800 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 7800 2900 50  0001 C CNN
+F 3 "" H 7800 2900 50  0001 C CNN
+	1    7800 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2800 7300 2800
+Wire Wire Line
+	7300 2800 7300 2950
+Connection ~ 6750 2950
+Wire Wire Line
+	7600 3000 7600 3800
+Wire Wire Line
+	7600 3800 6950 3800
+Connection ~ 6950 3800
+Wire Wire Line
+	7600 2900 7450 2900
+Wire Wire Line
+	7450 2900 7450 3050
+Wire Wire Line
+	7450 3050 6750 3050
+Wire Wire Line
+	6750 3050 6750 3400
+Wire Wire Line
+	6750 3400 6200 3400
+NoConn ~ 6200 3500
+Wire Wire Line
+	7100 3500 6500 3500
+Wire Wire Line
+	6500 3500 6500 3700
+Wire Wire Line
+	6500 3700 6200 3700
+Wire Wire Line
+	4100 3800 4300 3800
+Wire Wire Line
+	4100 3800 4100 3950
+Wire Wire Line
+	4100 1800 4100 1900
+Wire Wire Line
+	4100 1800 4300 1800
+Wire Wire Line
+	4250 1500 4300 1500
+Wire Wire Line
+	7250 1400 7250 1450
+Wire Wire Line
+	7250 2200 7250 2400
+Wire Wire Line
+	6950 3600 6950 3800
+Wire Wire Line
+	4100 1500 4100 1800
+Wire Wire Line
+	4900 5450 4900 5650
+Wire Wire Line
+	4900 4650 4900 4950
+Wire Wire Line
+	5850 4650 7800 4650
+Wire Wire Line
+	6750 2950 7300 2950
+Wire Wire Line
+	6950 3800 6950 3850
 $EndSCHEMATC

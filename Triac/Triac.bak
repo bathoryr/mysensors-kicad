@@ -30,8 +30,8 @@ LIBS:contrib
 LIBS:valves
 LIBS:borniers
 LIBS:mounting-hole
+LIBS:hlk-pm01
 LIBS:Triac-cache
-LIBS:HDOSensor-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -275,4 +275,7 @@ U 57DDC2E3
 F0 "Boiler control" 60
 F1 "BoilerControl.sch" 60
 $EndSheet
+Connection ~ 4300 2150
+NoConn ~ 6600 1000
+NoConn ~ 6800 1000
 $EndSCHEMATC
